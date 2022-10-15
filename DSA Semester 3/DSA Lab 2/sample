@@ -1,0 +1,30 @@
+for (i=0;i<t;i++){
+        if (union1[i]==union1[i+1]){
+            for (int j=i;j<t;j++){
+                union1[j]=union1[j+1];
+            }
+        }
+        else{
+            continue;
+        }
+    }
+
+
+    for (i=0;i<t;i++){
+        printf("%d ", union1[i]);
+    }
+
+    printf("%d ", union1[0]);
+    if (union1[i]!=union1[i-1]){
+            printf("%d ", union1[i]);
+        }
+
+
+        for (i=1;i<t;i++){
+        if (union1[i]!=union1[i-1]){
+            printf("%d ", union1[i]);
+        }
+        else{
+            continue;
+        }
+    }
